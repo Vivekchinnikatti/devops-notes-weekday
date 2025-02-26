@@ -1,0 +1,68 @@
+ 1001  mkdir demo
+ 1002  ls
+ 1003  ls -ltr
+ 1004  date
+ 1005  cd demo
+ 1006  pwd
+ 1007  ls -ltr
+ 1008  git --version
+ 1009  #yum install git
+ 1010  #apt install git
+ 1011  git --version
+ 1012  ls -ltr
+ 1013  pwd
+ 1014  git --version
+ 1015  vi 1.txt
+ 1016  ls -ltr
+ 1017  cat 1.txt
+ 1018  ls -ltr
+ 1019  git status
+ 1020  pwd
+ 1021  ls -ltr
+ 1022  pwd
+ 1023  ls -ltr
+ 1024  git init
+ 1025  pwd
+ 1026  ls -ltr
+ 1027  ls -ltra
+ 1028  date
+ 1029  cd ..
+ 1030  mkdir test
+ 1031  cd test
+ 1032  vi a.txt
+ 1033  ls l-ltr
+ 1034  ls -ltr
+ 1035  git status
+ 1036  git init
+ 1037  ls -ltr
+ 1038  cd ..
+ 1039  ls -ltr
+ 1040  rm -rf test
+ 1041  cd  demo
+ 1042  ls -ltr
+ 1043  ls -ltra
+ 1044  git status
+ 1045  vi 1.txt
+ 1046  git status
+ 1047  git add 1.txt
+ 1048  git status
+ 1049  vi 1.txt
+ 1050  git status
+ 1051  git add 1.txt
+ 1052  git status
+ 1053  git commit -m "first commit" 1.txt
+ 1054  ls -ltr
+ 1055  git status
+ 1056  #git init
+ 1057  #git status
+ 1058  #git add 1.txt
+ 1059  #git commit -m "first commit" 1.txt
+ 1060  git log
+ 1061  git show 044102
+ 1062  #git init
+ 1063  #git status
+ 1064  #git add 1.txt
+ 1065  #git commit -m "first commit" 1.txt
+ 1066  #git log
+ 1067  #git show 044102
+ 1068  ls -ltr
