@@ -1,0 +1,199 @@
+ 1005  git status
+ 1006  git log
+ 1007  vi /root/.gitconfig
+ 1008  git config --global --unset user.email
+ 1009  git config --global --unset user.name
+ 1010  git config --local --unset user.name
+ 1011  git config --local --unset user.email
+ 1012  git config --system --unset user.email
+ 1013  git config --system --unset user.name
+ 1014  vi 2.txt
+ 1015  ls -ltr
+ 1016  git status
+ 1017  git add  2.txt
+ 1018  git status
+ 1019  git commit -m "second commit" 2.txt
+ 1020  #local
+ 1021  #global
+ 1022  #system
+ 1023  # local config  --> git config  user.email "globaluser@gmai.com"
+ 1024  # global config  --> git config  --global user.email "globaluser@gmai.com"
+ 1025  # system config  --> git config  --system user.email "globaluser@gmai.com"
+ 1026  git config  user.email "globaluser@gmai.com"
+ 1027  git config --local --unset user.email
+ 1028  git config  user.email "localuser@gmai.com"
+ 1029  git config  user.name "localuser"
+ 1030  pwd
+ 1031  ls -ltra
+ 1032  cd .git/
+ 1033  ls
+ 1034  cat config
+ 1035  cd
+ 1036  mkdir test
+ 1037  cd  test
+ 1038  git init
+ 1039  vi a.txt
+ 1040  git add a.txt
+ 1041  git commit -m "123" a.txt
+ 1042  cd ..
+ 1043  rm -rf test
+ 1044  cd  demo
+ 1045  ls -ltr
+ 1046  vi 3.txt
+ 1047  git status
+ 1048  git add 3.txt
+ 1049  git status
+ 1050  git commit -m "second and third commit" .
+ 1051  git log
+ 1052  git config  --global user.email "globaluser@gmai.com"
+ 1053  git config  --global user.name "globaluser"
+ 1054  ls -ltr
+ 1055  vi 4.txt
+ 1056  git status
+ 1057  git add 4.txt
+ 1058  git commit -m "4th commit" .
+ 1059  git log
+ 1060  pwd
+ 1061  cd
+ 1062  vi .gitconfig
+ 1063  cd demo
+ 1064  git config --unset user.email
+ 1065  git config --unset user.name
+ 1066  cd .git
+ 1067  cat config
+ 1068  cd
+ 1069  cd demo
+ 1070  ls -ltr
+ 1071  vi 5.txt
+ 1072  git status
+ 1073  git add .
+ 1074  git commit -m "5th commit" .
+ 1075  git log
+ 1076  cd /etc/
+ 1077  ls -ltr
+ 1078  vi gitconfig
+ 1079  git config  --system user.email "systemuser@gmai.com"
+ 1080  git config  --system user.name "systemuser"
+ 1081  vi gitconfig
+ 1082  pwd
+ 1083  cd
+ 1084  cd  demo
+ 1085  ls -ltr
+ 1086  git log
+ 1087  git log --oneline
+ 1088  git show 1bda95d
+ 1089  git diff 0441023 0b6ef1a
+ 1090  ls -ltr
+ 1091  git log --oneline
+ 1092  git show 1bda95d
+ 1093  vi 5.txt
+ 1094  git revert 1bda95d
+ 1095  ls -ltr
+ 1096  git status
+ 1097  git log
+ 1098  ls -ltr
+ 1099  git log --oneline
+ 1100  git status
+ 1101  ls -ltr
+ 1102  git branch
+ 1103  git branch dev
+ 1104  git branch
+ 1105  git checkout dev
+ 1106  git branch
+ 1107  ls -ltr
+ 1108  vi devfile
+ 1109  ls -ltr
+ 1110  git status
+ 1111  git add devfile
+ 1112  git commit -m "dev branch commit" devfile
+ 1113  ls -ltr
+ 1114  git branch
+ 1115  git checkout master
+ 1116  ls -ltr
+ 1117  git branch
+ 1118  git checkout dev
+ 1119  ls -ltr
+ 1120  git branch QA
+ 1121  git branch
+ 1122  git checkout QA
+ 1123  ls -ltr
+ 1124  pwd
+ 1125  vi QAfile
+ 1126  ls -ltr
+ 1127  git add .
+ 1128  git commit -m "QA branch file" .
+ 1129  ls -ltr
+ 1130  git branch
+ 1131  ls -ltr
+ 1132  git checkout dev
+ 1133  git branch
+ 1134* git merge QA
+ 1135  ls -ltr
+ 1136  git branch
+ 1137  ls -ltr
+ 1138  git checkout master
+ 1139  ls -ltr
+ 1140  git merge dev
+ 1141  ls -ltr
+ 1142  git branch
+ 1143  git log
+ 1144  git log  --oneline
+ 1145  git checkout dev
+ 1146  git log  --oneline
+ 1147  git checkout QA
+ 1148  git log  --oneline
+ 1149  git branch
+ 1150  #git branch dev -> to create the branch
+ 1151  #git checkout dev -> to switch the branch
+ 1152  #git checkout -b test = git branch dev + git checkout dev
+ 1153  git checkout -b test
+ 1154  git branch
+ 1155  git branch -D test
+ 1156  git branch -D QA
+ 1157  git branch
+ 1158  git checkout master
+ 1159  git branch -D test
+ 1160  git branch
+ 1161  ls -ltr
+ 1162  vi 5.txt
+ 1163  git status
+ 1164  git add 5.txt
+ 1165  git status
+ 1166  git commit -m "5th commit" .
+ 1167  git status
+ 1168  ls -ltr
+ 1169  git branch
+ 1170  git checkout dev
+ 1171  git branch
+ 1172  ls -ltr
+ 1173  git log --oneline
+ 1174  git rebase master
+ 1175  git log --oneline
+ 1176  ls
+ 1177  git checkout -b QA
+ 1178  vi qafile
+ 1179  git add .
+ 1180  git commit -m "qa branch file" .
+ 1181  git checkout dev
+ 1182  git log --oneline
+ 1183  ls
+ 1184  git merge QA
+ 1185  ls
+ 1186  git log --oneline
+ 1187  git log --graph
+ 1188  git branch
+ 1189  git checkout master
+ 1190  git log --graph
+ 1191  ls -ltr
+ 1192  git branch
+ 1193  git push https://github.com/devopsguy27/demo.git master
+ 1194  vi 6.txt
+ 1195  git add 6.txt
+ 1196  git commit -m "6th commit" .
+ 1197  ls -ltr
+ 1198  git branch
+ 1199  git remote add origin https://github.com/devopsguy27/demo.git
+ 1200  git push origin  master
+ 1201  git remote -v
+ 1202  git branch
+ 1203  git push origin  dev
