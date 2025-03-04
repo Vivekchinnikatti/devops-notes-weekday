@@ -1,0 +1,154 @@
+ 1004  git branch
+ 1005  git status
+ 1006  git checkout dev
+ 1007  ls -ltr
+ 1008  vi newfile.txt
+ 1009  git status
+ 1010  git checkout master
+ 1011  ls -ltr
+ 1012  git status
+ 1013  cat newfile.txt
+ 1014  git branch
+ 1015  git checkout dev
+ 1016  ls -ltr
+ 1017  git status
+ 1018  git stash -u
+ 1019  ls -ltr
+ 1020  git checkout master
+ 1021  ls -ltr
+ 1022  git checkout dev
+ 1023  ls -ltr
+ 1024  git stash pop
+ 1025  ls -ltr
+ 1026  git stash -h
+ 1027  git add newfile.txt
+ 1028  git status
+ 1029  git chekcout master
+ 1030  git checkout master
+ 1031  ls -ltr
+ 1032  git checkout dev
+ 1033  ls -ltr
+ 1034  git status
+ 1035  git stash
+ 1036  ls -ltr
+ 1037  git stash pop
+ 1038  ls -ltr
+ 1039  cd ..
+ 1040  rm -rf demo
+ 1041  ls
+ 1042  git clone https://github.com/devopsguy27/demo.git
+ 1043  ls -ltr
+ 1044  git clone https://github.com/devopsguy27/demo.git
+ 1045  cd demo/
+ 1046  ls -ltr
+ 1047  git branch
+ 1048  git checkout dev
+ 1049  git branch
+ 1050  #clone
+ 1051  #push
+ 1052  #pull
+ 1053  ls -ltr
+ 1054  git checkout master
+ 1055  ls -ltr
+ 1056  git pull origin master
+ 1057  ls -ltr
+ 1058  #fork
+ 1059  #clone
+ 1060  #pull
+ 1061  #push
+ 1062  #fork
+ 1063  #git branch
+ 1064  #git checkout
+ 1065  #git stash
+ 1066  #git log
+ 1067  #git show
+ 1068  #git revert
+ 1069  #git merge
+ 1070  #git rebase
+ 1071  #git config
+ 1072  #git fetch
+ 1073  ls -ltr
+ 1074  git branch
+ 1075  git fetch origin master
+ 1076  ls -ltr
+ 1077  git merge origin/master
+ 1078  ls -ltr
+ 1079  #git pull origin master == git fetch origin master + git merge origin/master
+ 1080  git fetch origin master
+ 1081  git status
+ 1082  ls -ltr
+ 1083  git merge origin master
+ 1084  git status
+ 1085   ls -ltretr
+ 1086  ls -ltr
+ 1087  cd ..
+ 1088  rm -rf dmeo
+ 1089  mkdir demo
+ 1090  rm -rf demo
+ 1091  mkdir demo
+ 1092  cd demo
+ 1093  git init
+ 1094  vi 1.txt
+ 1095  git add 1.txt
+ 1096  git commit -m "main file" .
+ 1097  git status
+ 1098   ls -ltr
+ 1099  git branch
+ 1100  git branch dev1
+ 1101  git branch dev2
+ 1102  git branch
+ 1103  git checkout dev1
+ 1104  vi 1.txt
+ 1105  git add 1.txt
+ 1106  git commit -m "dev1 changes" .
+ 1107  git checkout master
+ 1108  git merge dev1
+ 1109  cat 1.txt
+ 1110  git branch
+ 1111  git checkout dev2
+ 1112  vi 1.txt
+ 1113  git add .
+ 1114  git commit -m "dev2 changes" .
+ 1115  git checkout master
+ 1116  git merge dev2
+ 1117  ls -ltr
+ 1118  cat 1.txt
+ 1119  git mergetool
+ 1120  ls -ltr
+ 1121  cat 1.txt
+ 1122  cat 1.txt.orig
+ 1123  rm 1.txt.orig
+ 1124  git status
+ 1125  git add 1.txt
+ 1126  git commit -m "fixed conflicts" 1.txt
+ 1127  git commit -m "fixed conflicts"
+ 1128  git status
+ 1129  git branch
+ 1130  git checkout dev1
+ 1131  vi 1.txt
+ 1132  git add .
+ 1133  git commit -m "dev1 1 more change" .
+ 1134  git checkout master
+ 1135  git merge dev1
+ 1136  git mergetool
+ 1137  git status
+ 1138  rm 1.txt.orig
+ 1139  git add
+ 1140  git add .
+ 1141  git commit -m "new change"
+ 1142  git status
+ 1143  git log --oneline
+ 1144  git reset
+ 1145  vi 2.txt
+ 1146  git add .
+ 1147  ls -ltr
+ 1148  git status
+ 1149  git reset
+ 1150  git status
+ 1151  git reset --hard
+ 1152  git status
+ 1153  git add 2.txt
+ 1154  git status
+ 1155  git reset --hard
+ 1156  git status
+ 1157  ls -ltr
