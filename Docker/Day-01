@@ -1,0 +1,42 @@
+ 1018  docker --version
+ 1019  docker ps
+ 1020  docker ps -a
+ 1021  docker system prune
+ 1022  docker container run nginx
+ 1023  docker container run -d nginx
+ 1024  ls
+ 1025  docker container ls
+ 1026  docker ps
+ 1027  docker ps -p
+ 1028  docker ps
+ 1029  #docker container run -d nginx
+ 1030  docker container run -d --name mycont nginx
+ 1031  docker ps
+ 1032  docker container run -d --name mycont nginx
+ 1033  docker container run -d --name mycont1 nginx
+ 1034  docker ps
+ 1035  docker container run -d --name mycont2 nginx sleep 60
+ 1036  watch docker ps
+ 1037  watch docker ps -a
+ 1038  docker ps
+ 1039  docker ps -a
+ 1040  docker logs fad0de3f5fcd
+ 1041  docker logs f5547693bbc1
+ 1042  #docker container run -d --name mycont nginx
+ 1043  #docker logs f5547693bbc1
+ 1044  #docker ps -a
+ 1045  #docker ps
+ 1046  docker container run ubuntu
+ 1047  doker ps
+ 1048  docker ps
+ 1049  docker ps -a
+ 1050  cat /etc/shells
+ 1051  docker container run httpd
+ 1052  docker container run -d httpd
+ 1053  docker ps
+ 1054  docker ps -a
+ 1055  #docker container run ubuntu
+ 1056  docker ps
+ 1057  docker container exec -it f5547693bbc1 bash
+ 1058  docker container exec -i f5547693bbc1 bash
+ 1059  docker container exec -t f5547693bbc1 bash
