@@ -1,0 +1,159 @@
+ 1005  cd java-project/
+ 1006  ls
+ 1007  mv Jenkinsfile app-deploy.yaml /tmp/
+ 1008  ls
+ 1009  mv Dockerfile /tmp/
+ 1010  ls
+ 1011  ls -ltr
+ 1012  tree
+ 1013  cd src/
+ 1014  ls
+ 1015  cd  main/
+ 1016  ls
+ 1017  cd java/
+ 1018  ls
+ 1019  cd
+ 1020  cd java-project/
+ 1021  tree
+ 1022  pwd
+ 1023  tree
+ 1024  cd src/main/java/learning/myproject/
+ 1025  vi DummyApplication.java
+ 1026  ls
+ 1027  tree
+ 1028  cd ..
+ 1029  tree
+ 1030  mvn compile
+ 1031  ls
+ 1032  cd ..
+ 1033  ls
+ 1034  mvn compile
+ 1035  tree
+ 1036  ls
+ 1037  cd target/classes/simplilearn/dummy/
+ 1038  less DummyApplication.class
+ 1039  cd -
+ 1040  ls
+ 1041  tree
+ 1042  mvn test
+ 1043  ls
+ 1044  tree
+ 1045  #mvn compile
+ 1046  #mvn test
+ 1047  mvn package
+ 1048  ls
+ 1049  tree
+ 1050  cd target/
+ 1051  ls
+ 1052  java - jar myproject-0.0.1-SNAPSHOT.jar
+ 1053  java -jar myproject-0.0.1-SNAPSHOT.jar
+ 1054  ls
+ 1055  #mvn compile
+ 1056  #mvn test
+ 1057  #mvn package
+ 1058  #java -jar myproject-0.0.1-SNAPSHOT.jar
+ 1059  cd ..
+ 1060  cd src/
+ 1061  tree
+ 1062  cd main/java/learning/myproject/
+ 1063  vi DummyApplication.java
+ 1064  cd ../../..
+ 1065  cd ..
+ 1066  ls
+ 1067  #mvn compile
+ 1068  #mvn test
+ 1069  #mvn package
+ 1070  #java -jar myproject-0.0.1-SNAPSHOT.jar
+ 1071  ls
+ 1072  mvn clean
+ 1073  ls
+ 1074  mvn install
+ 1075  tree
+ 1076  ls
+ 1077  #mvn compile
+ 1078  #mvn test
+ 1079  #mvn package
+ 1080  #java -jar myproject-0.0.1-SNAPSHOT.jar
+ 1081  mvn clean
+ 1082  #mvn clean
+ 1083  #mvn install
+ 1084  ls
+ 1085  #mvn compile
+ 1086  #mvn test
+ 1087  #mvn package
+ 1088  #java -jar myproject-0.0.1-SNAPSHOT.jar
+ 1089  #mvn clean
+ 1090  #mvn install
+ 1091  mvn install
+ 1092  ls -ltr
+ 1093  date
+ 1094  ls
+ 1095  #mvn install = mvn compile + mvn test + mvn package
+ 1096  #mvn clean
+ 1097  #mvn clean install = mvn clean + mvn install
+ 1098  ls
+ 1099  mvn clean install
+ 1100  ls -ltr
+ 1101  ls
+ 1102  cat src/main/java/learning/myproject/DummyApplication.java
+ 1103  cd
+ 1104  cd .m2
+ 1105  ls
+ 1106  cd repository/
+ 1107  ls
+ 1108  cd ..
+ 1109  rm -rf .m2
+ 1110  cd java-project/
+ 1111  mvn clean install
+ 1112  cd
+ 1113  cd .m2/
+ 1114  ls
+ 1115  cd repository/
+ 1116  ls
+ 1117  cd
+ 1118  cd java-project/
+ 1119  ls
+ 1120  vi pom.xml
+ 1121  mvn clean install
+ 1122  vi pom.xml
+ 1123  ls
+ 1124  cd src/
+ 1125  ls
+ 1126  mvn clean install
+ 1127  ls
+ 1128  cd ..
+ 1129  ls
+ 1130  cd ..
+ 1131  mvn archetype:generate
+ 1132  cd java-project/
+ 1133  ls
+ 1134  vi pom.xml
+ 1135  tree
+ 1136  ls
+ 1137  mvn clean install
+ 1138  tree
+ 1139  ls
+ 1140  mv /tmp/Dockerfile .
+ 1141  ls
+ 1142  cat Dockerfile
+ 1143  docker build -t myimg:java .
+ 1144  docker image ls
+ 1145  docker image tag myimg:java salilkul87/myimg:java
+ 1146  docker image push  salilkul87/myimg:java
+ 1147  docker login
+ 1148  docker image push  salilkul87/myimg:java
+ 1149  docker ps -a
+ 1150  docker system prune
+ 1151  docker image ls
+ 1152  docker container run -d --name mycont salilkul87/myimg:java
+ 1153  docker ps -a
+ 1154  docker logs 85c73a9225df
+ 1155  docker rm -f 85c73a9225df
+ 1156  #mvn clean install
+ 1157  #cat Dockerfile
+ 1158  #docker build -t myimg:java .
+ 1159  #docker image tag myimg:java salilkul87/myimg:java
+ 1160  #docker login
+ 1161  #docker image push  salilkul87/myimg:java
+ 1162  #docker container run -d --name mycont salilkul87/myimg:java
+ 1163  #docker rm -f 85c73a9225df
