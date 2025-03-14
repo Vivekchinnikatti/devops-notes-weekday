@@ -1,0 +1,149 @@
+  992  docker container exec -t f5547693bbc1 sh
+  993  docker container exec -t f5547693bbc1 tcsh
+  994  docker container exec -t f5547693bbc1 /bin/tcsh
+  995  docker container exec -t f5547693bbc1 sh
+  996  docker ps
+  997  docker ps -a
+  998  docker container rm f3f6b278b3a2
+  999  docker ps -a
+ 1000  docker container rm epic_hopper
+ 1001  cd docker/
+ 1002  vi Dockerfile
+ 1003  cd ..
+ 1004  ls
+ 1005  tar -cvzf paroject.tar java-project
+ 1006  ls -ltra
+ 1007  ls
+ 1008  mv paroject.tar project.tar
+ 1009  ls -ltrh
+ 1010  cd java-project/
+ 1011  ls
+ 1012  rm -rf target/
+ 1013  rm testfile
+ 1014  rm myproject-0.0.1-SNAPSHOT.jar
+ 1015  ls
+ 1016  cd ..
+ 1017  sl
+ 1018  ls
+ 1019  rm project.tar
+ 1020  ls -ltr
+ 1021  tar -cvzf project.tar java-project
+ 1022  ls -ltrh
+ 1023  mv project.tar ./docker/
+ 1024  ls
+ 1025  cd docker/
+ 1026  ls
+ 1027  vi Dockerfile
+ 1028  docker image build -t myimg:5.0 .
+ 1029  ls
+ 1030  docker container run -it --name mycont myimg:5.0 bash
+ 1031  docker ps -a
+ 1032  docker container rm d771d5526b6a
+ 1033  docker container run -it --rm  --name mycont myimg:5.0 bash
+ 1034  docker ps -a
+ 1035  vi Dockerfile
+ 1036  docker image build -t myimg:6.0 .
+ 1037  docker container run -it --rm  --name mycont myimg:6.0 bash
+ 1038  vi Dockerfile
+ 1039  docker image build -t myimg:6.0 .
+ 1040  docker container run -it --rm  --name mycont myimg:6.0 bash
+ 1041  cat Dockerfile
+ 1042  docker container run -it --rm  --name mycont --env app=test myimg:6.0 bash
+ 1043  vi Dockerfile
+ 1044  docker image build -t myimg:7.0 .
+ 1045  docker container run -it --rm  --name mycont myimg:7.0 bash
+ 1046  vi Dockerfile
+ 1047  docker image build -t myimg:8.0 .
+ 1048  #docker container run -it --rm  --name mycont myimg:8.0 bash
+ 1049  cat Dockerfile
+ 1050  vi Dockerfile
+ 1051  docker image build -t myimg:9.0 .
+ 1052  docker container run -it --rm  --name mycont myimg:9.0 bash
+ 1053  vi Dockerfile
+ 1054  docker container run -it  --name mycont myimg:9.0 bash
+ 1055  docker ps -a
+ 1056  cat Dockerfile
+ 1057  docker container run -it  --name mycont myimg:9.0
+ 1058  docker container run -it  --name mycont1 myimg:9.0
+ 1059  docker ps -a
+ 1060  cat Dockerfile
+ 1061  docker image history ubuntu:14.04
+ 1062  cat Dockerfile
+ 1063  vi Dockerfile
+ 1064  docker image build -t myimg:10.0 .
+ 1065  docker container run -it  --name mycont2 myimg:10.0
+ 1066  docker ps -a
+ 1067  vi Dockerfile
+ 1068  ls
+ 1069  vi useradd.sh
+ 1070  chmod +x useradd.sh
+ 1071  vi Dockerfile
+ 1072  docker image build -t myimg:11.0 .
+ 1073  docker container run -it  --name mycont3 myimg:11.0
+ 1074  vi useradd.sh
+ 1075  docker image build -t myimg:11.0 .
+ 1076  docker container run -it  --name mycont4 myimg:11.0
+ 1077  vi Dockerfile
+ 1078  cat Dockerfile
+ 1079  cat useradd.sh
+ 1080  vi useradd.sh
+ 1081  cat useradd.sh
+ 1082  bash useradd.sh
+ 1083  bash useradd.sh user2
+ 1084  bash useradd.sh user3
+ 1085  vi Dockerfile
+ 1086  cat Dockerfile
+ 1087  docker image build -t myimg:12.0 .
+ 1088  docker container run -it  --name mycont4 myimg:12.0
+ 1089  docker container run -it  --name mycont5 myimg:12.0
+ 1090  cat useradd.sh
+ 1091  vi Dockerfile
+ 1092  docker image build -t myimg:13.0 .
+ 1093  docker container run -it  --name mycont6 myimg:13.0 user3
+ 1094  docker container run -it  --name mycont6 myimg:13.0 date
+ 1095  docker container run -it  --name mycont7 myimg:13.0 date
+ 1096  docker ps -a
+ 1097  cat Dockerfile
+ 1098  #docker container run -it  --name mycont7 myimg:13.0 date
+ 1099  docker ps -a
+ 1100  cat Dockerfile
+ 1101  vi Dockerfile
+ 1102  docker image build -t myimg:14.0 .
+ 1103  l
+ 1104  #docker container run -it  --name mycont8 myimg:14.0 user3
+ 1105  docker container run -it  --name mycont8 myimg:14.0 user3
+ 1106  vi Dockerfile
+ 1107  docker image build -t myimg:15.0 .
+ 1108  docker container run -it --rm --name mycont9 myimg:15.0
+ 1109  docker container run -it --rm --name mycont9 myimg:15.0 user2
+ 1110  docker container run -it --rm --name mycont9 myimg:15.0 whoami
+ 1111  docker container run -it --rm --name mycont9 myimg:15.0 'echo hi user2'
+ 1112  docker container run -it --rm --name mycont9 myimg:15.0 echo 'hi user2'
+ 1113  vi Dockerfile
+ 1114  docker image build -t myimg:16.0 .
+ 1115  docker container run -it --rm --name mycont9 myimg:16.0 user1
+ 1116  docker container run -it --rm --name mycont9 myimg:16.0 user2
+ 1117  docker container run -it --rm --name mycont9 myimg:16.0 user3
+ 1118  cat Dockerfile
+ 1119  docker container run -it --rm --name mycont9 myimg:15.0 date
+ 1120  which date
+ 1121  docker container run -it --rm --name mycont9 myimg:15.0 vijay
+ 1122  which vijay
+ 1123  vi Dockerfile
+ 1124  docker image build -t myimg:17.0 .
+ 1125  docker container run -it --rm --name mycont9 myimg:17.0
+ 1126  vi Dockerfile
+ 1127  docker image build -t myimg:18.0 .
+ 1128  docker container run -it --rm --name mycont9 myimg:18.0
+ 1129  docker container run -it --rm --name mycont9 myimg:18.0 user2
+ 1130  cat Dockerfile
+ 1131  cd ..
+ 1132  ls
+ 1133  cd  java-project/
+ 1134  ls
+ 1135  vi Dockerfile
+ 1136  cd ..
+ 1137  l
+ 1138  vi D
+ 1139  cd  docker/
+ 1140  vi Dockerfile

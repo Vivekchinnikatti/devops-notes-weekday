@@ -1,0 +1,182 @@
+ 1006  docker images
+ 1007  #docker image push myimg:18.0
+ 1008  docker  login
+ 1009  #/root/.docker/config.json
+ 1010  docker login
+ 1011  rm /root/.docker/config.json
+ 1012  docker login
+ 1013  cat /root/.docker/config.json
+ 1014  docker image push myimg:18.0
+ 1015  # myimg:18.0 == docker.io/library/myimg => docker.io/salilkul87/myimg:18.0
+ 1016  docker image tag myimg:18.0 salilkul87/myimg:18.0
+ 1017  docker images
+ 1018  l
+ 1019  docker image push  salilkul87/myimg:18.0
+ 1020  docker image ls
+ 1021  ls
+ 1022  #docker image pull  salilkul87/myimg:18.0
+ 1023  docker logout
+ 1024  docker image ls
+ 1025  docker image rm -f a9cdd63dcd51
+ 1026  docker logout
+ 1027  docker image ls
+ 1028  docker image pull  salilkul87/myimg:18.0
+ 1029  docker image ls
+ 1030  docker image rm -f $(docker image ls -aq)
+ 1031  docker image ls
+ 1032  docker ps -a
+ 1033  docker container run -d --name mycont nginx
+ 1034  docker ps
+ 1035  docker container run -d -p 8080:80  --name mycont1 nginx
+ 1036  docker container run -d -p 9090:80  --name mycont2 nginx
+ 1037  docker ps
+ 1038  docker container rm -f cont1
+ 1039  docker container rm -f mycont1
+ 1040  docker container rm -f mycont2
+ 1041  docker ps
+ 1042  docker container run -d -p 8080:80 -v newvol:/tmp --name mycont2 nginx
+ 1043  docker volume ls
+ 1044  docker container exec -it mycont2 bash
+ 1045  docker volume ls
+ 1046  docker volume rm newvol
+ 1047  docker ps -a
+ 1048  docker container rm -f mycont2 mycont
+ 1049  docker volume ls
+ 1050  docker volume rm newvol pushpa2
+ 1051  docker volume ls
+ 1052  docker container run -d -p 8080:80 -v newvol:/tmp --name mycont2 nginx
+ 1053  docker container exec -it mycont2 bash
+ 1054  docker volume ls
+ 1055  cd /var/lib/docker/
+ 1056  ls
+ 1057  cd volumes/
+ 1058  ls
+ 1059  cd newvol/_data/
+ 1060  ls
+ 1061  docker ps
+ 1062  docker container rm -f mycont2
+ 1063  docker ps -a
+ 1064  ls
+ 1065  docker ps -a
+ 1066  docker container run -d -p 8080:80 -v myvol:/tmp --name mycont nginx
+ 1067  docker volume ls
+ 1068  cd ..
+ 1069  ls
+ 1070  pwd
+ 1071  cd myvol/
+ 1072  ls
+ 1073  cd _data/
+ 1074  ls
+ 1075  touch basefile
+ 1076  vi basefile
+ 1077  docker container exec -it mycont bash
+ 1078  ls
+ 1079  pwd
+ 1080  cd
+ 1081  docker ps -a
+ 1082  docker system prune
+ 1083  docker volume ls
+ 1084  docker volume prune
+ 1085  docker volume ls
+ 1086  docker volume prune
+ 1087  docker volume ls
+ 1088  docker volume rm myvol
+ 1089  df -h
+ 1090  #docker container run -d -p 8080:80 -v /mnt/storage:/tmp --name mycont nginx
+ 1091  cd /mnt/
+ 1092  ls
+ 1093  rm myimg.tar
+ 1094  ls -ltr
+ 1095  pwd
+ 1096  docker container run -d -p 8080:80 -v /mnt/storage:/tmp --name mycont nginx
+ 1097  docker container run -d -p 8081:80 -v /mnt/storage:/tmp --name mycont1 nginx
+ 1098  ls
+ 1099  cd  storage/
+ 1100  ls
+ 1101  touch 123
+ 1102  docker container exec -it mycont1 bash
+ 1103  docker network ls
+ 1104  docker container ls
+ 1105  docker container inspect 896cd18b2f72
+ 1106  docker ps
+ 1107  docker container inspect mycont
+ 1108  docker network ls
+ 1109  ip a s
+ 1110  docker network ls
+ 1111  docker ps
+ 1112  docker container exec -it mycont bash
+ 1113  docker ps
+ 1114  docker network ls
+ 1115  docker network create mynet
+ 1116  docker network ls
+ 1117  ip a s
+ 1118  docker network ls
+ 1119  #docker network create mynet
+ 1120  docker container run --net mynet -d --name customnwcont nginx
+ 1121  docker ps -a
+ 1122  docker container run --net mynet -d --name customnwcont1 nginx
+ 1123  docker ps -a
+ 1124  docker container rename mycont defaultnwcont
+ 1125  docker container rename mycont1 defaultnwcont1
+ 1126  docker ps -a
+ 1127  docker container inspect customnwcont
+ 1128  docker container exec -it  customnwcont bash
+ 1129  docker ps -a
+ 1130  docker network attach mynet defaultnwcont
+ 1131  docker attach network mynet defaultnwcont
+ 1132  docker attach mynet defaultnwcont
+ 1133  history | grep attach
+ 1134  docker attach  defaultnwcont mynet
+ 1135  docker network attach  defaultnwcont mynet
+ 1136  dokcer network -h
+ 1137  docker network -h
+ 1138  docker network connect defaultnwcont mynet
+ 1139  docker network connect mynet defaultnwcont
+ 1140  docker container inspect defaultnwcont
+ 1141  docker container exec -it  defaultnwcont bash
+ 1142  cd
+ 1143  l
+ 1144  docker ps -a
+ 1145  docker network ls
+ 1146  docker ps -a
+ 1147  docker container run --net host -d --name hostnwcont1 nginx
+ 1148  docker ps -a
+ 1149  docker container inpect hostnwcont1
+ 1150  docker container inspect hostnwcont1
+ 1151  docker ps -a
+ 1152  docker container run --net host -d --name hostnwcont2 nginx
+ 1153  docker ps -a
+ 1154  docker logs hostnwcont2
+ 1155  docker ps -a
+ 1156  docker network ls
+ 1157  overlay --> swarm
+ 1158  docker info
+ 1159  ps -ef | grep docker
+ 1160  systemctl status docker
+ 1161  ls
+ 1162  docker image ls
+ 1163  docker ps -a
+ 1164  docker container exec -it defaultnwcont bash
+ 1165  docker container commit defaultnwcont mynewcont
+ 1166  docker image ls
+ 1167  docker save mynewcont > mynewcont.tar
+ 1168  ls -ltr
+ 1169  docker image rm mynewcont
+ 1170  docker image ls
+ 1171  docker load < mynewcont.tar
+ 1172  docker image ls
+ 1173  ls
+ 1174  cd /home/salil/edifecs/
+ 1175  ls
+ 1176  cd
+ 1177  l
+ 1178  cd /tmp/
+ 1179  ls -ltr
+ 1180  cd
+ 1181  vi docker-compose.yaml
+ 1182  docker-compose up -d
+ 1183  cat docker-compose.yaml
+ 1184  docker ps
+ 1185  vi dokcer-compose-2.yaml
+ 1186  docker ps
+ 1187  docker-compose down

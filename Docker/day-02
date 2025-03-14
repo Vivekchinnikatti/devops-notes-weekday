@@ -1,0 +1,103 @@
+ 1017  docker system df
+ 1018  docker ps -a
+ 1019  docker container rm 63218672450e
+ 1020  docker container stop 63218672450e
+ 1021  docker ps
+ 1022  docker ps -a
+ 1023  docker container start 63218672450e
+ 1024  docker ps -a
+ 1025  docker container rm 63218672450e
+ 1026  docker container rm -f 63218672450e
+ 1027  docker ps -a
+ 1028  docker  run --name mycont1 -d nginx
+ 1029  docker  run --name mycont2 -d nginx
+ 1030  docker  run --name mycont3 -d nginx
+ 1031  docker ps -a
+ 1032  docker container pause mycont1
+ 1033  docker ps -a
+ 1034  docker container unpause mycont1
+ 1035  docker ps -a
+ 1036  #docker container start 63218672450e
+ 1037  #docker container stop 63218672450e
+ 1038  #docker container pause 63218672450e
+ 1039  #docker container unpause 63218672450e
+ 1040  #docker container rm 63218672450e
+ 1041  #docker container rm -f 63218672450e
+ 1042* #docker container prun
+ 1043  #docker logs 63218672450e
+ 1044  #docker container ps -a -s
+ 1045  #docker container prune
+ 1046  #docker container run
+ 1047  #docker container exec
+ 1048  #docker container ps
+ 1049  #docker system df
+ 1050  docker ps
+ 1051  docker container exec -it deb68fdeb6d4 bash
+ 1052  docker ps -a
+ 1053  docker container rm -f deb68fdeb6d4
+ 1054  docker  run --name mycont3 -d nginx
+ 1055  docker ps -a
+ 1056  docker container exec -it c1ad688e6a2d bash
+ 1057  docker container cp mycont3:/contfile .
+ 1058  ls
+ 1059  cat contfile
+ 1060  ls -ltr
+ 1061  date
+ 1062  docker container rm -f  mycont3
+ 1063  docker ps -a
+ 1064  ls
+ 1065  docker ps -a
+ 1066  docker container rename mycont2 newcont
+ 1067  docker ps -a
+ 1068  docker  run --name mycont4 -d nginx
+ 1069  docker image ls
+ 1070  docker images
+ 1071  docker system prune
+ 1072  docker ps
+ 1073  docker container rm -f mycont1 mycont mycont4
+ 1074  docker ps
+ 1075  docker container rm -f newcont
+ 1076  docker image rm $(docker image ls -a)
+ 1077  docker images
+ 1078  docker image rm -f 7b4e3a2053ff
+ 1079  docker images
+ 1080  docker ps -a
+ 1081  docker container run -d --name mycont nginx
+ 1082  docker image pull ubuntu
+ 1083  #docker container run -d --name mycont nginx
+ 1084  vi Dockerfile
+ 1085  ls
+ 1086  rm -rf demo
+ 1087  vi Dockerfile
+ 1088  ls
+ 1089  docker build -t myimg .
+ 1090  docker image ls
+ 1091  cat Dockerfile
+ 1092  mkdir docker
+ 1093  mv Dockerfile ./docker/
+ 1094  ls
+ 1095  cd  docker/
+ 1096  ls
+ 1097  vi Dockerfile
+ 1098  ls
+ 1099  mv Dockerfile Myfile
+ 1100  ls
+ 1101  docker build -t myimg .
+ 1102  docker build -t myimg -f Myfile .
+ 1103  cat D
+ 1104  cat Myfile
+ 1105  #docker build -t myimg -f Myfile .
+ 1106  docker image ls
+ 1107  ls
+ 1108  mv Myfile Dockerfile
+ 1109  ls
+ 1110  vi Dockerfile
+ 1111  docker build -t myimg -f Myfile .
+ 1112  docker build -t myimg .
+ 1113  vi Dockerfile
+ 1114  docker build -t myimg .
+ 1115  yum install tree
+ 1116  yum remove tree
+ 1117  vi Dockerfile
+ 1118  docker build -t myimg .
+ 1119  vi Dockerfile
