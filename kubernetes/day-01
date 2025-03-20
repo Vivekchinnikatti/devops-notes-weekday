@@ -1,0 +1,90 @@
+  191  kubectl describe po testpod
+  192  kubectl get po
+  193  kubectl get po -o wide
+  194  #kubectl run testpod --image=nginx
+  195  ls
+  196  cd k8
+  197  ls
+  198  cat pod.yaml
+  199  kubectl api-resources
+  200  #kubectl api-resources
+  201  ls
+  202  kubectl apply -f pod.yaml
+  203  kubectl get po
+  204  kubectl get po -o wide
+  205  kubectl get no
+  206  kubectl get po
+  207  kubectl delete po testpod
+  208  history | grep taint
+  209  kubectl taint no master node-role.kubernetes.io/control-plane:NoSchedule
+  210  kubectl get no
+  211  kubectl get po -o wide
+  212  kubectl get no
+  213  #kubectl apply -f pod.yaml
+  214  ls
+  215  kubectl get no
+  216  vi  pod-2.yaml
+  217  vi  pod-init.yaml
+  218  kubectl apply -f  pod-init.yaml
+  219  vi  pod-init.yaml
+  220  kubectl apply -f  pod-init.yaml
+  221  kubectl get po
+  222  kubectl delete -f  pod-init.yaml
+  223  kubectl get po
+  224  vi  pod-init.yaml
+  225  kubectl apply -f  pod-init.yaml
+  226  kubectl get po
+  227  kubectl describe po init-container
+  228  vi  pod-init.yaml
+  229  kubectl apply -f  pod-init.yaml
+  230  kubectl get po
+  231  vi  pod-init.yaml
+  232  kubectl get po
+  233  kubectl delete po init-container
+  234  kubectl apply -f  pod-init.yaml
+  235  kubectl get po
+  236  kubectl describe po init-container
+  237  kubectl get po
+  238  kubectl delete po init-container
+  239  ls
+  240  kubectl get po
+  241  ls
+  242  kubectl get po
+  243  vi pod.yaml
+  244  ls
+  245  kubectl get po
+  246  kubectl delete po nginx-pod
+  247  kubectl get po
+  248  ls
+  249  kubectl get po
+  250  vi deploy.yaml
+  251  kubectl apply -f deploy.yaml
+  252  kubectl get po
+  253  kubectl get po -o wide
+  254  kubectl  get no
+  255  kubectl  get po
+  256  kubectl delete po new-deploy-d9479b4fc-wkd59
+  257  kubectl delete po new-deploy-d9479b4fc-7vbdw
+  258  vi dep
+  259  vi deploy.yaml
+  260  kubectl get deploy
+  261  kubectl delete deploy new-deploy
+  262  kubectl apply -f deploy.yaml
+  263  vi deploy.yaml
+  264  kubectl apply -f deploy.yaml
+  265  kubectl get deploy
+  266  kubectl get po
+  267  kubectl get po --show-labels
+  268  kubectl run testpod --image=nginx
+  269  kubectl get po --show-labels
+  270*
+  271  kubectl get po --show-labels
+  272  kubectl label po testpod run-
+  273  kubectl get po --show-labels
+  274  kubectl label po testpod pod-template-hash=d9479b4fc
+  275  cat deploy.yaml
+  276  kubectl get po --show-labels
+  277  kubectl get deploy
+  278  kubectl delete deploy new-deploy
+  279  kubectl apply -f deploy.yaml
+  280  cat deploy.yaml
