@@ -1,0 +1,158 @@
+  263  vi deploy.yaml
+  264  kubectl apply -f deploy.yaml
+  265  kubectl get deploy
+  266  kubectl get po
+  267  kubectl get po --show-labels
+  268  kubectl run testpod --image=nginx
+  269  kubectl get po --show-labels
+  270  kubectl get po --show-labels
+  271  kubectl label po testpod run-
+  272  kubectl get po --show-labels
+  273  kubectl label po testpod pod-template-hash=d9479b4fc
+  274  cat deploy.yaml
+  275  kubectl get po --show-labels
+  276  kubectl get deploy
+  277  kubectl delete deploy new-deploy
+  278  kubectl apply -f deploy.yaml
+  279  cat deploy.yaml
+  280  history
+  281  vi pod.yaml
+  282  cat ./k8/pod.yaml
+  283  vi ./k8/pod.yaml
+  284  watch kubectl get po
+  285  watch kubectl get rs
+  286  kubectl  get po
+  287  kubectl  get deploy
+  288  kubectl  get rs
+  289  kubectl  delete po new-deploy-d9479b4fc-zhzbf
+  290  kubectl  get po
+  291  ls
+  292  cd k8/
+  293  ls
+  294  vi rc.yaml
+  295  vi rs.yaml
+  296  vi rc.yaml
+  297  vi rs.yaml
+  298  vi deploy.yaml
+  299  kubectl get deploy
+  300  kubectl get po
+  301  kubectl get rs
+  302  vi deploy.yaml
+  303  kubectl apply -f  deploy.yaml
+  304  kubectl get deploy
+  305  kubectl get rs
+  306  kubectl get po
+  307  kubectl get deploy
+  308  kubectl delete deploy new-deploy
+  309  kubectl apply -f  deploy.yaml
+  310  vi deploy.yaml
+  311  kubectl apply -f  deploy.yaml
+  312  kubectl rollout history deploy/new-deploy
+  313  kubectl rollout undo deploy/new-deploy --to-revision=1
+  314  kubectl scale deploy/new-deploy --replicas=5
+  315  kubectl scale deploy/new-deploy --replicas=1
+  316  vi deploy.yaml
+  317  kubectl scale deploy/new-deploy --replicas=5
+  318  kubectl rollout history deploy/new-deploy
+  319  kubectl rollout undo deploy/new-deploy --to-revision=2
+  320  kubectl rollout undo deploy/new-deploy --to-revision=3
+  321  kubectl rollout history deploy/new-deploy
+  322  kubectl scale deploy/new-deploy --replicas=2
+  323  kubectl scale deploy/new-deploy --replicas=4
+  324  kubectl get po
+  325  kubectl top po
+  326  kubectl describe po new-deploy-567b7f9555-5qqrg
+  327  kubectl get rs
+  328  kubectl delete rs new-deploy-56d7b59b67
+  329  kubectl get rs
+  330  kubectl scale deploy/new-deploy --replicas=0
+  331  kubectl get deploy
+  332  kubectl get po
+  333  kubectl get rs
+  334  kubectl scale deploy/new-deploy --replicas=2
+  335  kubectl get rs
+  336  kubectl get po
+  337  kubectl get deploy
+  338  l
+  339  ls
+  340  vi deploy-ns.yaml
+  341  kubectl get deploy
+  342  kubectl delete deploy new-deploy
+  343  kubectl get deploy
+  344  kubectl apply -f deploy-ns.yaml
+  345  kubectl get deploy
+  346  kubectl get po
+  347  kubectl describe po ng-dep-ns-6bf7d468fc-ds9g5
+  348  kubectl get no
+  349  kubectl get no --show-labels
+  350  kubectl get po
+  351  kubectl get no --show-labels
+  352  kubectl label no agent env=test
+  353  kubectl get po
+  354  ls
+  355  kubectl get po
+  356  kubectl get po -o wide
+  357  kubectl run testpod --image=nginx
+  358  kubectl get po -o wide
+  359  kubectl get no
+  360  kubectl describe no agent
+  361  kubectl describe no master
+  362  kubectl get no
+  363  kubectl describe no | grep -i taint
+  364  kubectl taint no agent env=test:NoSchedule
+  365  kubectl describe no | grep -i taint
+  366  kubectl run newpod --image=nginx
+  367  kubectl get po
+  368  kubectl  describe po newpod
+  369  kubectl get po
+  370  #kubectl taint no agent env=test:NoSchedule
+  371  #NoSchedule
+  372  #Preferno schedule
+  373  #NoExecute
+  374  kubectl taint no agent env-
+  375  kubectl get po
+  376  kubectl taint no agent env=test:NoExecute
+  377  ls
+  378  vi pod-toleration.yaml
+  379  kubectl apply -f  pod-toleration.yaml
+  380  kubectl get po
+  381  kubectl describe no | grep -i taint
+  382  vi pod-toleration.yaml
+  383  kubectl get po
+  384  kubectl delete po nginx
+  385  kubectl apply -f  pod-toleration.yaml
+  386  kubectl get po
+  387  vi pod-toleration.yaml
+  388  kubectl get po
+  389  ls
+  390  kubectl get ns
+  391  kubectl create ns myns
+  392  kubectl get ns
+  393  kubectl delete ns myns
+  394  kubectl delete ns test
+  395  ls
+  396  vi pod-ns.yaml
+  397  kubectl apply -f pod-ns.yaml
+  398  vi pod-ns.yaml
+  399  kubectl create ns dev
+  400  kubectl apply -f pod-ns.yaml
+  401  kubectl get po
+  402  vi pod-ns.yaml
+  403  kubectl get po -n dev
+  404  kubectl get ns
+  405  kubectl get po
+  406  kubectl get po -n default
+  407  kubectl get po
+  408  kubectl get po -n kube-system
+  409  kubectl get po -n kube-system -o wide
+  410  kubectl get po -A
+  411  ls
+  412  kubectl describe no | grep -i taint
+  413  kubectl taint no agent env-
+  414  kubectl describe no | grep -i taint
+  415  vi daemon-set.yaml
+  416  vi cm.yaml
+  417  vi secret.yaml
+  418  kubectl  get po
+  419  kubectl exec -it nginx -- bash
+  420  kubectl logs nginx

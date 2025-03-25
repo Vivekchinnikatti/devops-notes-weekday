@@ -85,6 +85,7 @@ b. setenforce 0
    sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
 c. swapoff -a  
 
+--> run this, sysctl -w net.ipv4.ip_forward=1
 
 d.  
 cat <<EOF | tee /etc/modules-load.d/containerd.conf

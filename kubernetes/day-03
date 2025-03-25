@@ -1,0 +1,124 @@
+  446  kubectl apply -f svc.yaml
+  447  kubectl get svc
+  448  kubectl delete svc ng-svc ng-svc-cp ng-svc-lb
+  449  kubectl apply -f svc.yaml
+  450  kubectl get svc
+  451  cat svc.yaml
+  452  kubectl get no
+  453  curl -v 10.99.70.255:8888
+  454  kubectl get po
+  455  docker containet run -d --name mycont nginx
+  456  docker container run -d --name mycont nginx
+  457  docker ps
+  458  docker container run -d --name newcont nginx
+  459  docker ps
+  460  docker container exec -it 8e905a4c275a bash
+  461  docker ps
+  462  docker container exec -it 8e905a4c275a bash
+  463  docker container inspect 25e2f4670733
+  464  docker container exec -it 8e905a4c275a bash
+  465  docker ps
+  466  docker container rm -f 8e905a4c275a 25e2f4670733
+  467  kubectl get po
+  468  kubectl delete po new-deploy-d9479b4fc-5ljjb
+  469  kubectl get po
+  470  kubectl get svc
+  471  vi deploy.yaml
+  472  vi svc.yaml
+  473  kubectl get deploy
+  474  kubectl get rs
+  475  kubectl get po
+  476  kubectl get svc
+  477  #curl -v 10.99.70.255:8888
+  478  curl -v ng-svc:8888
+  479  #curl -v 10.99.70.255:8888
+  480  kubectl get deploy
+  481  kubectl get rs
+  482  kubectl get po
+  483  kubectl get svc
+  484  #curl -v 10.99.70.255:8888
+  485  cat svc.yaml
+  486  kubectl get po --show-label
+  487  kubectl get po --show-labels
+  488  kubectl get svc
+  489  kubectl delete svc ng-svc
+  490  kubectl get svc
+  491  vi svc.yaml
+
+  422  kubectl get deploy
+  423  kubectl get rs
+  424  kubectl get po
+  425  kubectl get svc
+  426  cd k8/
+  427  vi svc.yaml
+  428  kubectl apply -f  svc.yaml
+  429  kubectl get svc
+  430  curl -v 10.102.252.120:8888
+  431  #curl -v 10.102.252.120:8888 ---> 80 ---> pod --> having the same label
+  432  #as mentioned in the service manifest file
+  433  cat svc.yaml
+  434  kubectl get svc
+  435  kubectl delete svc ng-svc
+  436  cat svc.yaml
+  437  vi svc.yaml
+  438  kubectl apply -f  svc.yaml
+  439  kubectl get svc
+  440  curl -v 10.101.112.79:8888
+  441  kubectl get deploy
+  442  kubectl get rs
+  443  kubectl get po
+  444  kubectl get svc
+  445  cat svc.yaml
+  446  curl -v 10.102.252.120:888
+  447  curl -v 10.102.252.12:8888
+  448  #curl -v 10.102.252.120:8888
+  449  cat svc.yaml
+  450  kubectl describe svc ng-svc
+  451  kubectl get po -o wide
+  452  kubectl get svc
+  453  kubectl delete svc ng-svc
+  454  kubectl get svc
+  455  vi svc.yaml
+  456  kubectl apply -f  svc.yaml
+  457  kubectl get svc
+  458  kubectl describe svc ng-svc
+  459  kubectl get po -o wide
+  460  kubectl get po
+  461  kubectl get svc
+  462  kubectl describe svc ng-svc
+  463  kubectl delete svc ng-svc
+  464  vi svc.yaml
+  465  kubectl apply -f  svc.yaml
+  466  kubectl describe svc ng-svc
+  467  kubectl get po
+  468  cat svc.yaml
+  469  kubectl exec -it new-deploy-d9479b4fc-gc4sw -- bash
+  470  kubectl get po
+  471  curl -v 10.102.252.12/home:8888
+  472  kubectl get svc
+  473  ls
+  474  vi svc-np.yaml
+  475  kubectl apply -f svc-np.yaml
+  476  kubectl get svc
+  477  kubectl get po
+  478  cat svc-np.yaml
+  479  kubectl get po -o wide
+  480  kubectl get svc
+  481  cat svc-np.yaml
+  482  ls
+  483  vi svc-lb.yaml
+  484  kubectl apply -f  svc-lb.yaml
+  485  kubectl get svc
+  486  cat svc-np.yaml
+  487  vi svc-np.yaml
+  488  kubectl get svc
+  489  kubectl delete svc ng-svc-np
+  490  kubectl apply -f  svc-np.yaml
+  491  kubectl get svc
+  492  kubectl delete svc ng-svc-np
+  493  kubectl get svc
+  494  kubectl apply -f  svc-np.yaml
+  495  kubectl get svc
+  496  vi svc-np.yaml
+  497  cat svc-np.yaml
+
