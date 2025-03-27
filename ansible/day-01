@@ -1,0 +1,114 @@
+  633  cd ansible/
+  634  #playbooks
+  635  ls
+  636  cat ansible.txt
+  637  ansible
+  638  yum install ansible
+  639  ansible --version
+  640  ansible localhost -m ping
+  641  ansible master -m ping
+  642  ansible localhost -m ping
+  643  ansible master -m ping
+  644  ansible --version
+  645  ping localhost
+  646  ansible master -m ping
+  647  ansible localhost -m ping
+  648  ansible --version
+  649  ansible localhost -m ping
+  650  ansible --version
+  651  ansible localhost -m ping
+  652  ansible master -m ping
+  653  ping localhost
+  654  cd /etc/ansible/
+  655  ls
+  656  vi ansible.cfg
+  657  ansible --version
+  658  ansible master -m ping
+  659  cat /etc/ansible/ansible.cfg
+  660  vi /etc/ansible/hosts
+  661  ansible master -m ping
+  662  ansible --version
+  663  cat /etc/ansible/hosts
+  664  ansible agent -m ping
+  665  ansible --version
+  666  ping titit
+  667  ping agent
+  668  ping loclahost
+  669  ping localhost
+  670  ping master
+  671  ansible agent -m ping
+  672  vi /etc/ansible/ansible.cfg
+  673  vi /etc/ansible/hosts
+  674  ansible agent -m ping
+  675  vi /etc/hosts
+  676  hostname -i
+  677  vi /etc/hosts
+  678  ansible agent -m ping
+  679  ssh agent
+  680  vi /etc/hosts
+  681  ssh agent
+  682  ping master
+  683  vi /etc/hosts
+  684  ansible 172.31.32.237 -m ping
+  685  vi /etc/ansible/hosts
+  686  ansible 172.31.32.237 -m ping
+  687  ansible agent -m ping
+  688  ansible 172.31.32.237 -m ping
+  689  ssh 172.31.32.237
+  690  cd /etc/ssh/
+  691  l
+  692  ls
+  693  vi sshd_config
+  694  ssh 172.31.32.237
+  695  ansible 172.31.32.237 -m ping
+  696  ansible 172.31.32.237 -m ping --ask-pass
+  697  ansible 172.31.32.237 -m ping
+  698  ansible 172.31.32.237 -m ping --ask-pass
+  699  systemctl restart sshd
+  700  cd
+  701  ansible 172.31.32.237 -m ping --ask-pass
+  702  ansible 172.31.32.237 -m ping
+  703  ansible 172.31.32.237 -m ping --ask-pass
+  704  ssh agent
+  705  ssh 172.31.32.237
+  706  ansible 172.31.45.13 -m ping --ask-pass
+  707  vi /etc/ansible/hosts
+  708  ansible 172.31.45.13 -m ping --ask-pass
+  709  ansible 172.31.45.13 -m ping
+  710  ansible 172.31.45.13 -m ping --ask-pass
+  711  vi /etc/hosts
+  712  ansible server -m ping --ask-pass
+  713  vi /etc/ansible/hosts
+  714  ansible server -m ping --ask-pass
+  715  ansible 172.31.45.13 -m ping --ask-pass
+  716  ssh 172.31.45.13
+  717  ssh-keygen
+  718  ssh-copy-id 172.31.45.13
+  719  ansible 172.31.45.13 -m ping
+  720  ansible-doc -l
+  721  ansible-doc -l | wc -l
+  722  ansible-doc -l | grep ping
+  723  ansible-doc -l | grep -w ping
+  724  ansible 172.31.45.13 -m ping
+  725  ls -ltr
+  726  cd ansible/
+  727  ls
+  728  #playbooks
+  729  #playbooks --> #plays --> #tasks --> #modules
+  730  cat create_user.yaml
+  731  vi create_user.yaml
+  732  ansible-playbook create_user.yaml
+  733  vi create_user.yaml
+  734  ansible-playbook create_user.yaml
+  735  cat create_user.yaml
+  736  ansible master -m ping
+  737  ssh master
+  738  ssh-copy-id master
+  739  ansible master -m ping
+  740  #2 nodes --> 1 is master and 1 is agent
+  741  vi /etc/ansible/hosts
+  742  vi create_user.yaml
+  743  ansible-playbook create_user.yaml
+  744  #idemptency
+  745  #idempotency
+  746  ansible-playbook create_user.yaml
