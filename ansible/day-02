@@ -112,3 +112,41 @@
  1125  vi handler-demo.yaml
  1126  ansible-playbook handler-demo.yaml
  1127  vi handler-demo.yaml
+
+  997  ansible-galaxy init newrole
+  998  ls
+  999  cd newrole/
+ 1000  tree
+ 1001  #ansible-galaxy init newrole
+ 1002  cd ..
+ 1003  ls
+ 1004  rm -rf newrole/
+ 1005  cd roles/
+ 1006  ls
+ 1007  cd ..
+ 1008  rm -rf myrole/
+ 1009  ls
+ 1010  cd roles/
+ 1011  ls
+ 1012  cd myrole/
+ 1013  ls
+ 1014  cat defaults/main.yml
+ 1015  cat meta/main.yml
+ 1016  ls
+ 1017  cat tasks/main.yml
+ 1018  cat vars/main.yml
+ 1019  ls
+ 1020  cd ..
+ 1021  ls
+ 1022  cat m
+ 1023  cat main.yaml
+ 1024  ansible-playbook main.yaml
+ 1025  ls
+ 1026  ansible-playbook main.yaml
+ 1027  cat myrole/defaults/main.yml
+ 1028  cat myrole/vars/main.yml
+ 1029  cd ..
+ 1030  ls
+ 1031  ansible-playbook pkg-uninstall.yaml --syntax-check
+ 1032  cat pkg-install.yaml
+ 1033  cd ..
