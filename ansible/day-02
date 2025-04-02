@@ -1,0 +1,152 @@
+ 1014  vi delete_user.yaml
+ 1015  ansible-playbook delete_user.yaml
+ 1016  cat delete_user.yaml
+ 1017  ls
+ 1018  vi pkg-install.yaml
+ 1019  ansible-playbook pkg-install.yaml
+ 1020  vi pkg-install.yaml
+ 1021  ansible-playbook pkg-install.yaml
+ 1022  ls
+ 1023  vi /test_script.sh
+ 1024  mv /test_script.sh .
+ 1025  chmod +x test_script.sh
+ 1026  ansible-playbook pkg-install.yaml
+ 1027  ls
+ 1028  ansible-playbook pkg-install.yaml
+ 1029  cat test_script.sh
+ 1030  date
+ 1031  echo "hello"
+ 1032  yum install https
+ 1033  ls
+ 1034  vi pkg-uninstall.yaml
+ 1035  ansible-playbook pkg-uninstall.yaml
+ 1036  vi pkg-uninstall.yaml
+ 1037  ansible-playbook pkg-uninstall.yaml
+ 1038  ls
+ 1039  cat create_user.yaml
+ 1040  vi create_user.yaml
+ 1041  vi loop-demo.yaml
+ 1042  vi var-loop-demo.yaml
+ 1043  vi loop-demo.yaml
+ 1044  vi create_user.yaml
+ 1045  vi loop-demo.yaml
+ 1046  ansible-playbook loop-demo.yaml
+ 1047  vi create_user.yaml
+ 1048  vi loop-demo.yaml
+ 1049  vi create_user.yaml
+ 1050  vi loop-demo.yaml
+ 1051  ansible-playbook loop-demo.yaml
+ 1052  cat loop-demo.yaml
+ 1053  vi loop-demo.yaml
+ 1054  ansible-playbook loop-demo.yaml
+ 1055  vi loop-demo.yaml
+ 1056  ls
+ 1057  vi var-demo.yaml
+ 1058  ansible-playbook var-demo.yaml
+ 1059  vi var-demo.yaml
+ 1060  ansible-playbook var-demo.yaml
+ 1061  vi var-demo.yaml
+ 1062  ls
+ 1063  vi var-loop-demo.yaml
+ 1064  cat var-loop-demo.yaml
+ 1065  cat var-demo.yaml
+ 1066  cat loop-demo.yaml
+ 1067  vi var-loop-demo.yaml
+ 1068  cat var.yaml
+ 1069  vi var-loop-demo.yaml
+ 1070  cat var-loop-demo.yaml
+ 1071  ansible-playbook var-loop-demo.yaml
+ 1072  vi var-loop-demo.yaml
+ 1073  ls
+ 1074  vi user_inputs.yaml
+ 1075  ansible-playbook user_inputs.yaml
+ 1076  vi user_inputs.yaml
+ 1077  ls
+ 1078  vi user_inputs.yaml
+ 1079  vi tags-demo.yaml
+ 1080  ansible-playbook tags-demo.yaml
+ 1081  ansible-playbook tags-demo.yaml --tag=dev
+ 1082  ansible-playbook tags-demo.yaml --tag=prod
+ 1083  ansible-playbook tags-demo.yaml --skip-tag=prod
+ 1084  vi tags-demo.yaml
+ 1085  ls
+ 1086  vi register-demo.yaml
+ 1087  ansible-playbook register-demo.yaml
+ 1088  vi register-demo.yaml
+ 1089  ansible-playbook register-demo.yaml
+ 1090  vi register-demo.yaml
+ 1091  ansible-playbook register-demo.yaml
+ 1092  vi register-demo.yaml
+ 1093  ansible-playbook register-demo.yaml
+ 1094  vi register-demo.yaml
+ 1095  ansible-playbook register-demo.yaml
+ 1096  vi register-demo.yaml
+ 1097  ansible-playbook register-demo.yaml
+ 1098  vi register-demo.yaml
+ 1099  cat var.yaml
+ 1100  echo "salil"
+ 1101  echo "test"
+ 1102*
+ 1103  ansible-playbook register-demo.yaml
+ 1104  vi register-demo.yaml
+ 1105  date
+ 1106  echo $?
+ 1107  dat
+ 1108  echo $?
+ 1109  vi register-demo.yaml
+ 1110  ansible-playbook register-demo.yaml
+ 1111  vi register-demo.yaml
+ 1112  ansible-playbook register-demo.yaml
+ 1113  vi register-demo.yaml
+ 1114  ansible-playbook register-demo.yaml
+ 1115  vi register-demo.yaml
+ 1116  ansible-playbook register-demo.yaml
+ 1117  vi register-demo.yaml
+ 1118  ansible agent -m setup
+ 1119  vi register-demo.yaml
+ 1120  ansible-playbook register-demo.yaml
+ 1121  ls
+ 1122  vi register-demo.yaml
+ 1123  vi handler-demo.yaml
+ 1124  ansible-playbook handler-demo.yaml
+ 1125  vi handler-demo.yaml
+ 1126  ansible-playbook handler-demo.yaml
+ 1127  vi handler-demo.yaml
+
+  997  ansible-galaxy init newrole
+  998  ls
+  999  cd newrole/
+ 1000  tree
+ 1001  #ansible-galaxy init newrole
+ 1002  cd ..
+ 1003  ls
+ 1004  rm -rf newrole/
+ 1005  cd roles/
+ 1006  ls
+ 1007  cd ..
+ 1008  rm -rf myrole/
+ 1009  ls
+ 1010  cd roles/
+ 1011  ls
+ 1012  cd myrole/
+ 1013  ls
+ 1014  cat defaults/main.yml
+ 1015  cat meta/main.yml
+ 1016  ls
+ 1017  cat tasks/main.yml
+ 1018  cat vars/main.yml
+ 1019  ls
+ 1020  cd ..
+ 1021  ls
+ 1022  cat m
+ 1023  cat main.yaml
+ 1024  ansible-playbook main.yaml
+ 1025  ls
+ 1026  ansible-playbook main.yaml
+ 1027  cat myrole/defaults/main.yml
+ 1028  cat myrole/vars/main.yml
+ 1029  cd ..
+ 1030  ls
+ 1031  ansible-playbook pkg-uninstall.yaml --syntax-check
+ 1032  cat pkg-install.yaml
+ 1033  cd ..

@@ -1,0 +1,57 @@
+  574  cd kubernetes-ingress/
+  575  ls
+  576  history | grep ing
+  577  kubectl apply -f deployments/common/ingress-class.yaml
+  578  kubectl apply -f common/ingress-class.yaml
+  579  ls
+  580  kubectl apply -f daemon-set/nginx-ingress.yaml
+  581  ls
+  582  cd deploy
+  583  cd ..
+  584  cd
+  585  ls
+  586  cd k8/
+  587  kubectl apply -f deployments/common/ns-and-sa.yaml
+  588  ls
+  589  cd kubernetes-ingress/
+  590  kubectl apply -f deployments/common/ns-and-sa.yaml
+  591  kubectl apply -f deployments/rbac/rbac.yaml
+  592  kubectl apply -f deployments/rbac/ap-rbac.yaml
+  593  kubectl apply -f deployments/rbac/apdos-rbac.yaml
+  594  kubectl apply -f examples/shared-examples/default-server-secret/default-server-secret.yaml
+  595  kubectl apply -f deployments/common/nginx-config.yaml
+  596  kubectl apply -f deployments/common/ingress-class.yaml
+  597  kubectl apply -f deployments/deployment/nginx-ingress.yaml
+  598  kubectl get pods --namespace=nginx-ingress
+  599  kubectl create -f deployments/service/nodeport.yaml
+  600  kubectl apply -f deployments/service/loadbalancer.yaml
+  601  kubectl get ns
+  602  kubectl get all -n nginx-ingress
+  603  ls
+  604  cd ..
+  605  ls
+  606  vi ingres-rules.yaml
+  607  vi ingres-rules-2.yaml
+  608  ls
+  609  vi ingres-rules-2.yaml
+  610  vi ingres-rules.yaml
+  611  cat ingres-rules.yaml
+  612  cat ingres-rules-2.yaml
+  613  ls
+  614  cat pv.yaml
+  615  cat pvc.yaml
+  616  cat pod-storage.yaml
+  617  kubectl apply -f pv.yaml
+  618  kubectl get pv
+  619  kubectl apply -f pvc.yaml
+  620  kubectl get pvc
+  621  kubectl get pv
+  622  kubectl get pvc
+  623  kubectl apply -f  pod-storage.yaml
+  624  kubectl get po
+  625  kubectl exec -it mypod -- bash
+  626  cd /var/storage
+  627  kubectl get po -o wide
+  628  kubectl get po
+  629  kubectl delete po mypod
+  630  cat pv.yaml
